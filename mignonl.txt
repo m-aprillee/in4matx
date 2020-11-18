@@ -1,0 +1,132 @@
+Last login: Wed Nov 18 09:04:40 on ttys000
+mignonaprillee@Mignons-MacBook-Pro ~ % cd Documents 
+mignonaprillee@Mignons-MacBook-Pro Documents % cd inf43 
+mignonaprillee@Mignons-MacBook-Pro inf43 % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.about_me.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+mignonaprillee@Mignons-MacBook-Pro inf43 % git add about_me.txt
+fatal: pathspec 'about_me.txt' did not match any files
+mignonaprillee@Mignons-MacBook-Pro inf43 % git add about_me.txt 
+mignonaprillee@Mignons-MacBook-Pro inf43 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   about_me.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.about_me.txt.swp
+
+mignonaprillee@Mignons-MacBook-Pro inf43 % git commit -m "Adds a file describing myself." 
+[master (root-commit) c2a5961] Adds a file describing myself.
+ 1 file changed, 48 insertions(+)
+ create mode 100644 about_me.txt
+mignonaprillee@Mignons-MacBook-Pro inf43 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.about_me.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+mignonaprillee@Mignons-MacBook-Pro inf43 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.about_me.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+mignonaprillee@Mignons-MacBook-Pro inf43 % git checkout -b feature1
+Switched to a new branch 'feature1'
+mignonaprillee@Mignons-MacBook-Pro inf43 % git checkout feature2
+error: pathspec 'feature2' did not match any file(s) known to git
+mignonaprillee@Mignons-MacBook-Pro inf43 % git status
+On branch feature1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.about_me.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+mignonaprillee@Mignons-MacBook-Pro inf43 % git branch
+* feature1
+  master
+mignonaprillee@Mignons-MacBook-Pro inf43 % git checkout -b feature2
+Switched to a new branch 'feature2'
+mignonaprillee@Mignons-MacBook-Pro inf43 % git branch
+  feature1
+* feature2
+  master
+mignonaprillee@Mignons-MacBook-Pro inf43 % git add./feature1.txt
+git: 'add./feature1.txt' is not a git command. See 'git --help'.
+mignonaprillee@Mignons-MacBook-Pro inf43 % git add ./feature.txt
+fatal: pathspec './feature.txt' did not match any files
+mignonaprillee@Mignons-MacBook-Pro inf43 % git log
+commit c2a5961d625359e8873c8817731e53e9b5d11d56 (HEAD -> feature2, master, feature1)
+Author: Mignon April Lee <leeapril137@gmail.com>
+Date:   Wed Nov 18 09:13:18 2020 -0800
+
+    Adds a file describing myself.
+mignonaprillee@Mignons-MacBook-Pro inf43 % git checkout feature1
+Switched to branch 'feature1'
+mignonaprillee@Mignons-MacBook-Pro inf43 % ls
+about_me.txt
+mignonaprillee@Mignons-MacBook-Pro inf43 % git log
+commit c2a5961d625359e8873c8817731e53e9b5d11d56 (HEAD -> feature1, master, feature2)
+Author: Mignon April Lee <leeapril137@gmail.com>
+Date:   Wed Nov 18 09:13:18 2020 -0800
+
+    Adds a file describing myself.
+mignonaprillee@Mignons-MacBook-Pro inf43 % git checkout master
+Switched to branch 'master'
+mignonaprillee@Mignons-MacBook-Pro inf43 % git merge feature1
+Already up to date.
+mignonaprillee@Mignons-MacBook-Pro inf43 % git log
+commit c2a5961d625359e8873c8817731e53e9b5d11d56 (HEAD -> master, feature2, feature1)
+Author: Mignon April Lee <leeapril137@gmail.com>
+Date:   Wed Nov 18 09:13:18 2020 -0800
+
+    Adds a file describing myself.
+mignonaprillee@Mignons-MacBook-Pro inf43 % cd
+mignonaprillee@Mignons-MacBook-Pro ~ % git clone https://github.com/m-aprillee/in4matx.git
+Cloning into 'in4matx'...
+warning: You appear to have cloned an empty repository.
+mignonaprillee@Mignons-MacBook-Pro ~ % cd in4matx 
+mignonaprillee@Mignons-MacBook-Pro in4matx % mignonl.txt
+zsh: command not found: mignonl.txt
+mignonaprillee@Mignons-MacBook-Pro in4matx % git add ./mignonl.txt
+fatal: pathspec './mignonl.txt' did not match any files
+mignonaprillee@Mignons-MacBook-Pro in4matx % vim mignonl.txt
+
+mignonl
+Hello this is Mignon April Lee.
+
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
